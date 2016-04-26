@@ -33,5 +33,6 @@
 
 ### Chapter 1 
 
+  - [Common Component](./Chapter 1/0.Common Component)
   - [Navigator and basic framework](./Chapter 1/1.Navigator and basic framework.md)
   - [GeneralScheduleView](./Chapter 1/2.GeneralScheduleView.md)
