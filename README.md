@@ -35,4 +35,4 @@
 
   - [Common Component](./Chapter 1/0.Common Component.md)
   - [Navigator and basic framework](./Chapter 1/1.Navigator and basic framework.md)
-  - [GeneralScheduleView](./Chapter 1/2.GeneralScheduleView.md)
+  - [.GeneralScheduleView and ListContainer](./Chapter 1/2.GeneralScheduleView and ListContainer.md)
