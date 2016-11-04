@@ -1,38 +1,49 @@
-## Analyse the source code of f8-app
+# Analyse the source code of f8-app
 
-### simple view of file tree in f8-app
+> 分析 Facebook f8 App 的架构和实现
 
-```javascript
-- index.android.js
-- index.ios.js
+## Simple view of file tree in f8-app
+
+```bash
++ index.android.js
++ index.ios.js
 - js
-// main
--- env.js
--- F8App.js
--- F8Navigator.js
--- FacebookSDK.js
--- Playground.js
--- setup.js
-// components
--- common
--- filter
--- login
--- rating
--- tabs
-// reducer
--- actions
--- reducers
--- store
+    + env.js # environment config
+    + setup.js # entry file
+    + F8App.js # main component
+    + F8Navigator.js # router controller
+    + FacebookSDK.js
+    # components
+    + common
+    + filter
+    + login
+    + rating
+    + tabs
+    # redux
+    + actions
+    + reducers
+    + store
 ```
 
-- Main Entry: `F8App.js`
-  - if login: `F8Navigator.js`
-  - else: `login/loginScreen.js`
-- Extension: `Playground.js`
-- Common Components: `common`
+- 入口：`setup.js`，组建 store，渲染 RN
 
-### Chapter 1 
+- 最外层组件：`F8App.js`
 
-  - [Common Component](./Chapter 1/0.Common Component.md)
-  - [Navigator and basic framework](./Chapter 1/1.Navigator and basic framework.md)
-  - [GeneralScheduleView and ListContainer](./Chapter 1/2.GeneralScheduleView and ListContainer.md)
+  - 如果用户已登录，则渲染：`F8Navigator.js`
+  - 否则渲染：`login/loginScreen.js`
+
+- 通用组件: `common`
+
+## Menu
+
+### Chapter 1 -- STRUCTOR
+
+- [Main Structor](./Chapter 1/1.main_structor.md)
+
+- [Navigator and Basic Framework](./Chapter 1/2.navigator_and_basic_framework.md)
+
+### Chapter 2 -- COMMON COMPONENTS
+
+- [Common Components](./Chapter 2/1.common_components.md)
+
+- [GeneralScheduleView and ListContainer](./Chapter 2/2.general_schedule_view_and_list_container.md)
